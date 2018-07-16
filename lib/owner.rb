@@ -1,4 +1,5 @@
 class Owner
+  
    attr_accessor :name, :pets_info
   def initialize(name) 
     @name = name 
@@ -15,15 +16,11 @@ class Owner
     pets_info[:fish].push(fish)
   end
   
-  
   def buying(animal, pet_name) 
-    
     if animal == "dog"
       buy_dog(Dog.new(pet_name))
-    
     elsif animal == "cat"
       buy_cat(Cat.new(pet_name))
-    
     elsif animal == "fish"
       buy_fish(Fish.new(pet_name))
     end
