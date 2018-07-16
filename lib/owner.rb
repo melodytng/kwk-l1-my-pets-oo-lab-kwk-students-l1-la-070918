@@ -37,8 +37,7 @@ class Owner
       
 end
  
-owner1 = Owner.new("Karen")
-puts owner1.name
+owner1 = Owner.new
 owner1.buy_dog("Spot")
 puts owner1.pets_info
 
