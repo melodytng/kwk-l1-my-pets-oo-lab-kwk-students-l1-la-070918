@@ -1,7 +1,7 @@
 class Owner
   
    attr_accessor :pets_info
-  def initialize(name) 
+  def initialize
     @pets_info= {:cats=> [], :dogs=> [], :fish=> []}
   end
   
