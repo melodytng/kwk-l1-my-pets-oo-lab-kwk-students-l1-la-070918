@@ -6,26 +6,18 @@ class Owner
     @pets_info= {:cats=> [], :dogs=> [], :fish=> []}
   end
   
-  def buy_dog(dog)
-    pets_info[:dogs].push(dog)
-  end
-  def buy_cat(cat)
-    pets_info[:cats].push(cat)
-  end
-  def buy_fish(fish)
-    pets_info[:fish].push(fish)
+  def buy_dog(dog_name)
+    pets_info[:dogs].push(Dog.new(pet_name))
   end
   
-  def buying(animal, pet_name) 
-    if animal == "dog"
-      buy_dog(Dog.new(pet_name))
-    elsif animal == "cat"
-      buy_cat(Cat.new(pet_name))
-    elsif animal == "fish"
-      buy_fish(Fish.new(pet_name))
-    end
+  def buy_cat(cat_name)
+    pets_info[:cats].push(Cat.new(cat_name))
   end
-    
+  
+  def buy_fish(fish_name)
+    pets_info[:fish].push(Fish.new(fish_name))
+  end
+  
   def action(action, name)
     moods = null
     if action == "walking"
@@ -48,7 +40,7 @@ end
  
 owner1 = Owner.new("Karen")
 puts owner1.name
-owner1.buying("dog", "Fido")
+owner1.buy_dog("Fido")
 
 
 
