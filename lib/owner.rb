@@ -49,7 +49,7 @@ class Owner
       
 end
  
-the_owner=Owner.new("Karen")
+the_owner = Owner.new("Karen")
 puts the_owner.name
 the_owner.buying("fish", "Fido")
 puts the_owner.pets_info
