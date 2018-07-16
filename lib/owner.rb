@@ -25,7 +25,7 @@ class Owner
       buy_cat(Cat.new(name))
     
     elsif animal == "fish"
-      buy_cat(Fish.new(name))
+      buy_fish(Fish.new(name))
     end
   end
     
