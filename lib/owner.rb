@@ -16,16 +16,16 @@ class Owner
   end
   
   
-  def buying(animal, name) 
+  def buying(animal, pet_name) 
     
     if animal == "dog"
-      buy_dog(Dog.new(name))
+      buy_dog(Dog.new(pet_name))
     
     elsif animal == "cat"
-      buy_cat(Cat.new(name))
+      buy_cat(Cat.new(pet_name))
     
     elsif animal == "fish"
-      buy_fish(Fish.new(name))
+      buy_fish(Fish.new(pet_name))
     end
   end
     
