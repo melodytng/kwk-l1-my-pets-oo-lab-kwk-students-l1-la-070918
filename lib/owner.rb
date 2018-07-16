@@ -6,13 +6,13 @@ class Owner
   end
   
   def buy_cat(cat)
-    pets_info[:cats].push (cat)
+    pets_info[:cats].push(cat)
   end
   def buy_dog(dog)
-    pets_info[:dog].push (dog)
+    pets_info[:dog].push(dog)
   end
   def buy_fish(fish)
-    pets_info[:dog].push (fish)
+    pets_info[:dog].push(fish)
   end
   
   
