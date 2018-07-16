@@ -5,11 +5,11 @@ class Owner
     @pets_info= {:cats=> [], :dogs=> [], :fish=> []}
   end
   
-  def buy_cat(cat)
-    pets_info[:cats].push(cat)
-  end
   def buy_dog(dog)
     pets_info[:dogs].push(dog)
+  end
+  def buy_cat(cat)
+    pets_info[:cats].push(cat)
   end
   def buy_fish(fish)
     pets_info[:fish].push(fish)
