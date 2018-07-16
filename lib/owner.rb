@@ -40,8 +40,7 @@ end
  
 owner1 = Owner.new("Karen")
 puts owner1.name
-owner1.buy_dog("Fido")
-
+puts owner1.pets_info
 
 
 
