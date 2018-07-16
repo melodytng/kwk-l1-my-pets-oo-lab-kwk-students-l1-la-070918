@@ -48,7 +48,7 @@ end
  
 owner1 = Owner.new("Karen")
 puts owner1.name
-owner1.buying("fish", "Fido")
+owner1.buying("dog", "Fido")
 
 
 
