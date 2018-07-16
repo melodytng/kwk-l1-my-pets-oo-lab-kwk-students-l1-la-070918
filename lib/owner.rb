@@ -25,7 +25,7 @@ class Owner
       buy_cat(Cat.new(name))
     
     elsif animal == "fish"
-      pets_info[:fish].push (Fish.new(name))
+      buy_cat(Fish.new(name))
     end
   end
     
