@@ -12,7 +12,7 @@ class Owner
     pets_info[:dog].push (dog)
   end
   def buy_fish(fish)
-    fish)
+    pets_info[:dog].push (fish)
   end
   
   
